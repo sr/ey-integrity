@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+/usr/bin/env ssh -i ${SSH_KEY} -o CheckHostIP=no $@

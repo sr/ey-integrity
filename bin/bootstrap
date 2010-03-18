@@ -1,0 +1,29 @@
+#!/usr/bin/env ruby
+require "init"
+
+dir = Pathname(__FILE__).dirname.expand_path
+
+Integrity.bootstrap do |b|
+  b.project "Integrity" do |p|
+    p.uri     = "git://github.com/integrity/integrity.git"
+    p.command = dir.join("ci-integrity")
+    p.branch  = "master"
+    p.public
+  end
+
+  %w[1.8.6 1.8.7 1.9.1 jruby].each { |ruby|
+    b.project "Sinatra (#{ruby})" do |p|
+      p.uri     = "git://github.com/sinatra/sinatra.git"
+      p.command = dir.join("ci-sinatra #{ruby}")
+      p.branch  = "master"
+      p.public
+    end
+
+    b.project "Sinatra 0.9.x (#{ruby})" do |p|
+      p.uri     = "git://github.com/sinatra/sinatra.git"
+      p.command = dir.join("ci-sinatra #{ruby}")
+      p.branch  = "0.9.x"
+      p.public
+    end
+  }
+end

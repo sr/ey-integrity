@@ -1,0 +1,145 @@
+--- 
+dependencies: 
+  haml: 
+    group: 
+    - :default
+    version: = 2.2.17
+  do_postgres: 
+    group: 
+    - :default
+    version: = 0.10.1
+  dm-validations: 
+    group: 
+    - :default
+    version: = 0.10.2
+  uuidtools: 
+    group: 
+    - :default
+    version: = 2.1.1
+  data_objects: 
+    group: 
+    - :default
+    version: = 0.10.1
+  rake: 
+    group: 
+    - :default
+    version: ">= 0"
+  addressable: 
+    group: 
+    - :default
+    version: = 2.1.1
+  dm-types: 
+    group: 
+    - :default
+    version: = 0.10.2
+  thor: 
+    group: 
+    - :default
+    version: = 0.9.9
+  dm-aggregates: 
+    group: 
+    - :default
+    version: = 0.10.2
+  resque: 
+    group: 
+    - :default
+    version: ">= 0"
+  rack: 
+    group: 
+    - :default
+    version: = 1.0.1
+  dm-core: 
+    group: 
+    - :default
+    version: = 0.10.2
+  dm-timestamps: 
+    group: 
+    - :default
+    version: = 0.10.2
+  json: 
+    group: 
+    - :default
+    version: = 1.1.9
+  sinatra: 
+    group: 
+    - :default
+    version: = 1.0.a
+  bcrypt-ruby: 
+    group: 
+    - :default
+    version: = 2.1.2
+  extlib: 
+    group: 
+    - :default
+    version: = 0.9.14
+  shout-bot: 
+    group: 
+    - :default
+    version: ">= 0"
+  dm-migrations: 
+    group: 
+    - :default
+    version: = 0.10.2
+  sinatra-authorization: 
+    group: 
+    - :default
+    version: = 1.0.0
+specs: 
+- redis: 
+    version: 0.1.2
+- redis-namespace: 
+    version: 0.2.1
+- json_pure: 
+    version: 1.2.2
+- extlib: 
+    version: 0.9.14
+- bcrypt-ruby: 
+    version: 2.1.2
+- json: 
+    version: 1.1.9
+- rack: 
+    version: 1.0.1
+- dm-timestamps: 
+    version: 0.10.2
+- dm-aggregates: 
+    version: 0.10.2
+- stringex: 
+    version: 1.1.0
+- thor: 
+    version: 0.9.9
+- vegas: 
+    version: 0.1.4
+- resque: 
+    version: 1.5.2
+- haml: 
+    version: 2.2.17
+- sinatra: 
+    version: 1.0.a
+- sinatra-authorization: 
+    version: 1.0.0
+- rake: 
+    version: 0.8.7
+- addressable: 
+    version: 2.1.1
+- shout-bot: 
+    version: 0.0.4
+- dm-core: 
+    version: 0.10.2
+- dm-migrations: 
+    version: 0.10.2
+- dm-validations: 
+    version: 0.10.2
+- data_objects: 
+    version: 0.10.1
+- uuidtools: 
+    version: 2.1.1
+- do_postgres: 
+    version: 0.10.1
+- fastercsv: 
+    version: 1.5.1
+- dm-types: 
+    version: 0.10.2
+hash: d78d981512e552265153afdd95e223ea51458cbe
+sources: 
+- Rubygems: 
+    uri: http://gemcutter.org

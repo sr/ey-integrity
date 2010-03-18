@@ -1,0 +1,5 @@
+#!/bin/sh
+unset -v BUNDLER_GEMFILE
+export HOME=`pwd`
+bundle install
+time bundle exec rake
