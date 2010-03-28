@@ -47,7 +47,7 @@ dependencies:
   rack: 
     group: 
     - :default
-    version: = 1.0.1
+    version: ">= 0"
   dm-core: 
     group: 
     - :default
@@ -63,7 +63,7 @@ dependencies:
   sinatra: 
     group: 
     - :default
-    version: = 1.0.a
+    version: = 1.0.0
   bcrypt-ruby: 
     group: 
     - :default
@@ -85,61 +85,61 @@ dependencies:
     - :default
     version: = 1.0.0
 specs: 
-- redis: 
-    version: 0.1.2
-- redis-namespace: 
-    version: 0.2.1
-- json_pure: 
-    version: 1.2.2
-- extlib: 
-    version: 0.9.14
-- bcrypt-ruby: 
-    version: 2.1.2
-- json: 
-    version: 1.1.9
-- rack: 
-    version: 1.0.1
-- dm-timestamps: 
-    version: 0.10.2
-- dm-aggregates: 
-    version: 0.10.2
-- stringex: 
-    version: 1.1.0
-- thor: 
-    version: 0.9.9
-- vegas: 
-    version: 0.1.4
-- resque: 
-    version: 1.5.2
-- haml: 
-    version: 2.2.17
-- sinatra: 
-    version: 1.0.a
-- sinatra-authorization: 
-    version: 1.0.0
 - rake: 
     version: 0.8.7
-- addressable: 
-    version: 2.1.1
-- shout-bot: 
-    version: 0.0.4
-- dm-core: 
-    version: 0.10.2
-- dm-migrations: 
-    version: 0.10.2
+- fastercsv: 
+    version: 1.5.3
 - dm-validations: 
     version: 0.10.2
+- haml: 
+    version: 2.2.17
 - data_objects: 
     version: 0.10.1
 - uuidtools: 
     version: 2.1.1
 - do_postgres: 
     version: 0.10.1
-- fastercsv: 
-    version: 1.5.1
 - dm-types: 
     version: 0.10.2
-hash: d78d981512e552265153afdd95e223ea51458cbe
+- addressable: 
+    version: 2.1.1
+- thor: 
+    version: 0.9.9
+- vegas: 
+    version: 0.1.5
+- stringex: 
+    version: 1.1.0
+- dm-aggregates: 
+    version: 0.10.2
+- rack: 
+    version: 1.1.0
+- dm-core: 
+    version: 0.10.2
+- dm-timestamps: 
+    version: 0.10.2
+- resque: 
+    version: 1.6.0
+- sinatra: 
+    version: "1.0"
+- json: 
+    version: 1.1.9
+- bcrypt-ruby: 
+    version: 2.1.2
+- shout-bot: 
+    version: 0.0.4
+- extlib: 
+    version: 0.9.14
+- json_pure: 
+    version: 1.2.3
+- redis-namespace: 
+    version: 0.3.0
+- redis: 
+    version: 0.1.2
+- dm-migrations: 
+    version: 0.10.2
+- sinatra-authorization: 
+    version: 1.0.0
+hash: 2b4aa3a34b6cb85e9d4455462d57a3efffb39be8
 sources: 
 - Rubygems: 
     uri: http://gemcutter.org
