@@ -3,7 +3,7 @@
 
 USAGE
 
-  * Create a new Rack application for git://ghub.com/sr/ey-integry.git
+  * Create a new Rack application for git://github.com/sr/ey-integrity.git
   * Attach the app to a Nginx+Unicorn environment and hit deploy. It'll fail.
   * Deploy the custom recipes with `ey-recipes -d ENV`
   * Hit deploy again
