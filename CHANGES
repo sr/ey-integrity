@@ -1,3 +1,34 @@
+= 21 / 2010-06-01
+
+ * Add ability to fork a project to track a topic branch
+
+ * Link to GitHub from build and project page when possible
+
+ * Do not display the full commit SHA1 anymore
+
+ * Fix a bug introduced in v20
+
+ * Upgrade to DataMapper RC3
+
+= 20 / 2010-05-27
+
+ * Fix GitHub integration to work with valid git ref such as
+   "refs/heads/releases/2010/15" [Chris Griego]
+
+ * Support GitHub-ish payload to make Integrity work with
+   http://beanstalkapp.com/ [Dima Sabanin]
+
+ * Unknown commit date are now displayed as "unavailable" instead
+   of "Jan 1st" [Douglas F Shearer]
+
+ * Fix Heroku deployment [Glenn Roberts]
+
+= 0.4.1 / 2010-04-02
+
+ * The caching stuff introduced 0.3.0 have been reverted
+
+ * The "Delete this build" is now always available, even for in-progress builds
+
 = 0.4.0 / 2010-03-27
 
  * Add a rake task to clean-up old build checkouts
