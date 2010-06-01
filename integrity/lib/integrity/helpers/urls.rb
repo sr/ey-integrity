@@ -1,6 +1,23 @@
 module Integrity
   module Helpers
     module Urls
+      def github_project_url(project)
+        parts = project.uri.path.split("/").reject { |x| x.empty? }
+        user  = parts.first
+        repo  = parts.last.chomp(".git")
+
+        if project.branch == "master"
+          "http://github.com/#{user}/#{repo}"
+        else
+          "http://github.com/#{user}/#{repo}/tree/#{project.branch}"
+        end
+      end
+
+      def github_commit_url(commit)
+        github_project_url(commit.build.project).to_s +
+          "/commits/#{commit.identifier}"
+      end
+
       def root_url
         @root_url ||= Addressable::URI.parse(url_for("/", :full))
       end

@@ -17,13 +17,6 @@ module Integrity
       show :error, :title => "something has gone terribly wrong"
     end
 
-    use Sass::Plugin::Rack
-
-    configure do |app|
-      Sass::Plugin.options[:css_location]      = app.public
-      Sass::Plugin.options[:template_location] = app.views
-    end
-
     before do
       halt 404 if request.path_info.include?("favico")
 
@@ -106,6 +99,19 @@ module Integrity
       show :new, :title => ["projects", current_project.permalink, "edit"]
     end
 
+    get "/:project/fork" do
+      login_required
+      show :fork, :title => ["projects", current_project.permalink, "fork"]
+    end
+
+    post "/:project/fork" do
+      login_required
+
+      branch  = params["project_data"]["branch"]
+      project = current_project.fork(branch)
+      redirect project_url(project).to_s
+    end
+
     post "/:project/builds" do
       login_required
 
@@ -116,7 +122,7 @@ module Integrity
     get "/:project/builds/:build" do
       login_required unless current_project.public?
       show :build, :title => ["projects", current_project.permalink,
-        current_build.commit.identifier]
+        current_build.commit.short_identifier]
     end
 
     post "/:project/builds/:build" do

@@ -15,6 +15,9 @@ class BrowseBuildsTest < Test::Unit::AcceptanceTestCase
     assert_have_no_tag("#last_build")
     assert_have_no_tag("#previous_builds")
     assert_contain("No builds for this project, buddy")
+
+    click_link "GitHub"
+    assert last_request.url.include?("http://github.com")
   end
 
   scenario "Browsing to a project with all kind of builds" do
@@ -32,6 +35,10 @@ class BrowseBuildsTest < Test::Unit::AcceptanceTestCase
       assert_have_tag("li.failed",  :count => 2)
       assert_have_tag("li.success", :count => 3)
     end
+
+    click_link Commit.first.short_identifier
+    click_link "on GitHub"
+    assert last_request.url.include?("http://github.com")
   end
 
   scenario "Looking for details on the last build" do
