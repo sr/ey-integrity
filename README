@@ -3,7 +3,11 @@
 
 USAGE
 
+Ask beta@engineyard.com or email me directly at simon@rozet.name to get access
+to the PostgreSQL beta program.
+
   * Create a new Rack application for git://github.com/sr/ey-integrity.git
-  * Attach the app to a Nginx+Unicorn environment and hit deploy. It'll fail.
-  * Deploy the custom recipes with `ey-recipes -d ENV`
-  * Hit deploy again
+  * Add bundler 0.9.25 and Rack 1.1.0 to the gems
+  * Attach the app to a Nginx+Unicorn and PostgreSQL environment.
+  * Upload the custom recipes with `ey-recipes -u ENV`
+  * Hit deploy on the dashboard
