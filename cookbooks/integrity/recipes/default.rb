@@ -14,7 +14,7 @@ end
 
 gem_package "rack" do
   action :install
-  version "1.0.1"
+  version "1.1.0"
 end
 
 directory "/tmp/integrity-builds" do
