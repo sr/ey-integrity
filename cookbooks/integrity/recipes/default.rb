@@ -9,7 +9,7 @@ end
 
 gem_package "bundler" do
   action :install
-  version "0.9.7"
+  version "0.9.25"
 end
 
 gem_package "rack" do
