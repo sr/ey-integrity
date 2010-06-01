@@ -4,14 +4,10 @@ dependencies:
     group: 
     - :default
     version: = 2.2.17
-  do_postgres: 
-    group: 
-    - :default
-    version: = 0.10.1
   dm-validations: 
     group: 
     - :default
-    version: = 0.10.2
+    version: = 1.0.0.rc3
   uuidtools: 
     group: 
     - :default
@@ -19,7 +15,7 @@ dependencies:
   data_objects: 
     group: 
     - :default
-    version: = 0.10.1
+    version: = 0.10.2
   rake: 
     group: 
     - :default
@@ -31,15 +27,19 @@ dependencies:
   dm-types: 
     group: 
     - :default
-    version: = 0.10.2
+    version: = 1.0.0.rc3
   thor: 
     group: 
     - :default
     version: = 0.9.9
+  dm-postgres-adapter: 
+    group: 
+    - :default
+    version: = 1.0.0.rc3
   dm-aggregates: 
     group: 
     - :default
-    version: = 0.10.2
+    version: = 1.0.0.rc3
   resque: 
     group: 
     - :default
@@ -51,11 +51,11 @@ dependencies:
   dm-core: 
     group: 
     - :default
-    version: = 0.10.2
+    version: = 1.0.0.rc3
   dm-timestamps: 
     group: 
     - :default
-    version: = 0.10.2
+    version: = 1.0.0.rc3
   json: 
     group: 
     - :default
@@ -71,7 +71,7 @@ dependencies:
   extlib: 
     group: 
     - :default
-    version: = 0.9.14
+    version: = 0.9.15
   shout-bot: 
     group: 
     - :default
@@ -79,7 +79,7 @@ dependencies:
   dm-migrations: 
     group: 
     - :default
-    version: = 0.10.2
+    version: = 1.0.0.rc3
   sinatra-authorization: 
     group: 
     - :default
@@ -87,59 +87,63 @@ dependencies:
 specs: 
 - rake: 
     version: 0.8.7
-- fastercsv: 
-    version: 1.5.3
-- dm-validations: 
-    version: 0.10.2
-- haml: 
-    version: 2.2.17
-- data_objects: 
-    version: 0.10.1
-- uuidtools: 
-    version: 2.1.1
-- do_postgres: 
-    version: 0.10.1
-- dm-types: 
-    version: 0.10.2
 - addressable: 
     version: 2.1.1
-- thor: 
-    version: 0.9.9
-- vegas: 
-    version: 0.1.5
-- stringex: 
-    version: 1.1.0
-- dm-aggregates: 
-    version: 0.10.2
-- rack: 
-    version: 1.1.0
-- dm-core: 
-    version: 0.10.2
-- dm-timestamps: 
-    version: 0.10.2
-- resque: 
-    version: 1.6.0
-- sinatra: 
-    version: "1.0"
-- json: 
-    version: 1.1.9
 - bcrypt-ruby: 
     version: 2.1.2
+- data_objects: 
+    version: 0.10.2
+- extlib: 
+    version: 0.9.15
+- dm-core: 
+    version: 1.0.0.rc3
+- dm-aggregates: 
+    version: 1.0.0.rc3
+- dm-do-adapter: 
+    version: 1.0.0.rc3
+- dm-migrations: 
+    version: 1.0.0.rc3
+- do_postgres: 
+    version: 0.10.2
+- dm-postgres-adapter: 
+    version: 1.0.0.rc3
+- dm-timestamps: 
+    version: 1.0.0.rc3
+- fastercsv: 
+    version: 1.5.3
+- json_pure: 
+    version: 1.4.3
+- stringex: 
+    version: 1.1.0
+- uuidtools: 
+    version: 2.1.1
+- dm-types: 
+    version: 1.0.0.rc3
+- dm-validations: 
+    version: 1.0.0.rc3
+- haml: 
+    version: 2.2.17
+- json: 
+    version: 1.1.9
+- rack: 
+    version: 1.1.0
+- redis: 
+    version: 1.0.7
+- redis-namespace: 
+    version: 0.4.4
+- sinatra: 
+    version: "1.0"
+- vegas: 
+    version: 0.1.7
+- resque: 
+    version: 1.8.5
 - shout-bot: 
     version: 0.0.4
-- extlib: 
-    version: 0.9.14
-- json_pure: 
-    version: 1.2.3
-- redis-namespace: 
-    version: 0.3.0
-- redis: 
-    version: 0.1.2
-- dm-migrations: 
-    version: 0.10.2
 - sinatra-authorization: 
     version: 1.0.0
-hash: 2b4aa3a34b6cb85e9d4455462d57a3efffb39be8
+- thor: 
+    version: 0.9.9
+hash: 250f500c231dfa9816750deb2c5fa4daf11dec24
 sources: 
 - Rubygems: 
     uri: http://gemcutter.org
