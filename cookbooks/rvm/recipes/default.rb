@@ -5,7 +5,7 @@ execute "rvm bootstrap" do
     " && cd rvm && ./install"
 end
 
-%w[1.8.6 1.8.7 ree 1.9.1 jruby rbx].each { |ruby|
+node[:rvm][:rubies].each { |ruby|
   script "rvm install #{ruby}" do
     interpreter "bash"
     action :run
