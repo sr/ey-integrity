@@ -5,12 +5,6 @@ script "rvm bootstrap" do
   not_if { File.directory?("/home/#{node[:owner_name]}/.rvm") }
   code <<SH
 export HOME=/home/#{node[:owner_name]}
-## Install git
-mkdir -p $HOME/.rvm/src && cd $HOME/.rvm/src && package = git && version=1.6.5.3
-curl -O http://kernel.org/pub/software/scm/git/$package-$version.tar.gz
-cd $package-$version && ./configure --prefix=/usr/local && make && sudo make install
-#
-## Install RVM
 cd $HOME/.rvm/src && git clone --depth 1 git://github.com/wayneeseguin/rvm.git && cd rvm && ./install
 
 # Install common rubies
